@@ -1,3 +1,7 @@
+
+url - https://super-cleans-api-service.onrender.com
+
+
 1. Order
 url - http://localhost:5000/api/order
 body - {name,product_name,order_in_kg,created_by,created_at}
