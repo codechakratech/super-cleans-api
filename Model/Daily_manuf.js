@@ -29,6 +29,10 @@ const dailySchema = new mongoose.Schema({
         type: Number,
         required: true
     },
+    productname:{
+        type:String,
+        required:true
+    },
     created_by: {
         type: String
     },

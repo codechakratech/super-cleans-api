@@ -18,6 +18,18 @@ const manifSchema = new mongoose.Schema({
         type:String,
         required:true
     },
+    aadharno:{
+        type:String,
+        required:true
+    },
+    aadharphoto:{
+        type:String,
+        required:true
+    },
+    profileimg:{
+        type:String,
+        required:true
+    },
     password:{
         type:String,
         required:true

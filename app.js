@@ -15,6 +15,8 @@ const Employeeroute = require("./Routers/EmployeeRoutings")
 const mainfRoute = require('./Routers/mainfRoute')
 const mangeRoute = require('./Routers/mangeRoute')
 const Productroute = require("./Routers/ProductRoutes")
+const deproute = require("./Routers/DepRoutes")
+const weightRoute = require("./Routers/WeightRoutes")
 
 // inilization
 const app = express()
@@ -40,6 +42,8 @@ app.use("/api/employee",Employeeroute)
 app.use('/api/manufacture', mainfRoute)
 app.use('/api/management', mangeRoute)
 app.use("/api/product",Productroute)
+app.use("/api/dep",deproute)
+app.use("/api/weight",weightRoute)
 
 // listen
 app.listen(process.env.PORT)

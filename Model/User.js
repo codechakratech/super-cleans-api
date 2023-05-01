@@ -25,6 +25,22 @@ const userSchema = new mongoose.Schema({
     created_at: {
         type: Date,
         default: Date.now()
+    },
+    working_area: {
+        type: String,
+        required: true
+    },
+    state: {
+        type: String,
+        required: true
+    },
+    district: {
+        type: String,
+        required: true
+    },
+    taluka: {
+        type: String,
+        required: true
     }
 })
 

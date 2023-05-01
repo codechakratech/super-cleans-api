@@ -1,6 +1,4 @@
-
 url - https://super-cleans-api-service.onrender.com
-
 
 1. Order
 url - http://localhost:5000/api/order
@@ -8,15 +6,15 @@ body - {name,product_name,order_in_kg,created_by,created_at}
 
 2. User
 url - http://localhost:5000/api/user
-body - {name,address,email,mobile_no,created_by,created_at}
+body - {name,address,email,mobile_no,created_by,created_at,working_area,state,district,taluka}
 
 3. Daily-Manufacture - 
 url - http://localhost:5000/api/daily_manufacture
-body - {status,packing_type,filling,total_product_kg,batch,date,bag,created_by,created_at,}
+body - {status,packing_type,filling,total_product_kg,batch,date,bag,created_by,created_at,productname}
 
 4. sales -
 url - http://localhost:5000/api/sales
-body - { name,address,mobileno,email,password,createdby,createdat}
+body - { name,address,mobileno,email,password,createdby,createdat,aadharno,aadharphoto,profileimg}
 
 5. catagory - 
 url -http://localhost:5000/api/category
@@ -32,12 +30,21 @@ body - {name,email,address,password}
 
 8. Management - 
 url- http://localhost:5000/api/management
-body - {name,address,email,password,createdby,createdat}
+body - {name,address,email,password,createdby,createdat,aadharno,aadharphoto,profileimg}
 
 9. manufacture - 
 url - http://localhost:5000/api/manufacture 
-body - {name,address,mob_no,email,password,createdby,createdat}
+body - {name,address,mob_no,email,password,createdby,createdat,aadharno,aadharphoto,profileimg}
 
 10. product - 
 url - http://localhost:5000/api/product
 body -  {productname,createdby,createdat}
+
+11. Department - 
+url - http://localhost:5000/api/dep
+body - {dept_name}
+
+12. Weight - 
+url - http://localhost:5000/api/weight
+body - {weight_name}
+
