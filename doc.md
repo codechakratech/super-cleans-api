@@ -26,7 +26,7 @@ body - {name,categories,createdby,createdat}
 
 7. employee -
 url -  http://localhost:5000/api/employee
-body - {name,email,address,password,aadharno,aadharphoto,profileimg}
+body - {name,email,address,Mobile_no,password,aadharno,aadharphoto,profileimg}
 
 8. Management - 
 url- http://localhost:5000/api/management
