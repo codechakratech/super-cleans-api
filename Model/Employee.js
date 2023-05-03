@@ -13,6 +13,10 @@ const empSchema = new mongoose.Schema({
         type:String,
         required:true
     },
+    Mobile_no:{
+        type:Number,
+        required:true
+    },
     aadharno:{
         type:String,
         required:true
