@@ -1,6 +1,8 @@
-const {getSubcategory,postSubcategory,putSubcategory,deleteSubcategory} = require("../Controller/SubcategoryController")
+const {getSubcategory,postSubcategory,putSubcategory,deleteSubcategory, getSubcatbyid} = require("../Controller/SubcategoryController")
 
 const route = require("express").Router()
+
+route.get('/byid/:id',getSubcatbyid)
 
 route.get("/",getSubcategory)
 

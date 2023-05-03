@@ -1,6 +1,15 @@
 
 const Order = require('../Model/Order')
 
+exports.getOrderbyid = async (req,res)=>{
+    try {
+        const data = await Order.findById(req.params.id)
+        return res.json({errors:false,data:data})
+    } catch (error) {
+        return res.status(400).json({errors:true,message:error.message})
+    }
+}
+
 
 // get
 exports.getOrder= async (req,res)=>{

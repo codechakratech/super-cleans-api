@@ -1,12 +1,14 @@
 
-const { getOrder, postOrder, putOrder, deleteOrder } = require('../Controller/orderController')
+const { getOrder, postOrder, putOrder, deleteOrder, getOrderbyid } = require('../Controller/orderController')
 
 
 // router fun add
 const route = require('express').Router()
 
-
 // all methods routes
+
+route.get('/byid/:id',getOrderbyid)
+
 route.get('/', getOrder)
 
 route.post('/', postOrder)
