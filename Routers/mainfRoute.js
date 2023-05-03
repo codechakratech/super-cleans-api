@@ -1,10 +1,10 @@
-const { getMainf, postMainf, MainfLogin, putMainf, deleteMainf,getMainfbyId } = require("../Controller/mainfController")
+const { getMainf, postMainf, MainfLogin, putMainf, deleteMainf, getMainfbyId} = require("../Controller/mainfController")
 
 const route = require('express').Router()
 
-route.get("/",getMainf)
-
 route.get("/byid/:id",getMainfbyId)
+
+route.get("/",getMainf)
 
 route.post("/",postMainf)
 

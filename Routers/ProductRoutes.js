@@ -1,10 +1,10 @@
-const {getProduct,postProduct,putProduct,deleteProduct,getproductbyId} = require("../Controller/ProductController")
+const {getProduct,postProduct,putProduct,deleteProduct, getprobyid} = require("../Controller/ProductController")
 
 const route = require("express").Router()
 
-route.get("/",getProduct)
+route.get('/byid/:id',getprobyid)
 
-route.get("/byid/:id",getproductbyId)
+route.get("/",getProduct)
 
 route.post("/",postProduct)
 

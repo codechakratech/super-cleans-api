@@ -4,8 +4,6 @@ const route = require("express").Router()
 
 route.get("/",getSales)
 
-route.get("/byid/:id",getsalesbyId)
-
 route.post("/",postSales)
 
 route.post("/login",salesLogin)
@@ -13,6 +11,8 @@ route.post("/login",salesLogin)
 route.put("/:id",putSales)
 
 route.delete("/:id",deleteSales)
+
+route.get("/byid/:id",getsalesbyId)
 
 module.exports = route
 

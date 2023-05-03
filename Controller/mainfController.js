@@ -2,20 +2,21 @@ const Mainf = require('../Model/Mainf')
 const bcrypt = require("bcrypt")
 const jwt = require("jsonwebtoken")
 
-exports.getMainf = async (req,res)=>{
+
+
+// get data by id
+exports.getMainfbyId = async (req,res)=>{
     try {
-        const data = await Mainf.find()
+        const data = await Mainf.findById(req.params.id)
         return res.json({errors:false,data:data})
     } catch (error) {
         return res.status(400).json({errors:true,message:error.message})
     }
 }
 
-
-// get data by id
-exports.getMainfbyId = async (req,res)=>{
+exports.getMainf = async (req,res)=>{
     try {
-        const data = await Mange.findById(req.params.id)
+        const data = await Mainf.find()
         return res.json({errors:false,data:data})
     } catch (error) {
         return res.status(400).json({errors:true,message:error.message})

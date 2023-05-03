@@ -2,7 +2,7 @@ const Subcategory = require("../Model/Sub-Category")
 
 exports.getSubcatbyid = async (req,res)=>{
     try {
-        const data = await Subcat.findById(req.params.id)
+        const data = await Subcategory.findById(req.params.id)
         return res.json({errors:false,data:data})
     } catch (error) {
         return res.status(400).json({errors:true,message:error.message})
