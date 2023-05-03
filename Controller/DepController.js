@@ -7,7 +7,15 @@ exports.getDep= async (req,res)=>{
         return res.json({errors:false,data:data})
     } catch (error) {
         return res.status(400).json({errors:false,message:error.message})
-        
+    }
+}
+// by id
+exports.getdepbyId = async (req,res)=>{
+    try {
+        const data = await Dep.findById(req.params.id)
+        return res.json({errors:false,data:data})
+    } catch (error) {
+        return res.status(400).json({errors:true,message:error.message})
     }
 }
 // post

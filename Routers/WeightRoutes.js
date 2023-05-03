@@ -1,8 +1,10 @@
-const { getWeight, postWeight, putWeight, deleteWeight } = require('../Controller/WeightController')
+const { getWeightbyId, getWeight, postWeight, putWeight, deleteWeight } = require('../Controller/WeightController')
 
 const route = require('express').Router()
 
 route.get('/', getWeight)
+
+route.get("/byid/:id",getWeightbyId)
 
 route.post('/', postWeight)
 

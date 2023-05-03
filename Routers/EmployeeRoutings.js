@@ -1,8 +1,10 @@
-const {getEmployee,postEmployee,putEmployee,deleteEmployee,EmployeeLogin} = require("../Controller/EmployeeController")
+const { getEmployeebyId, getEmployee,postEmployee,putEmployee,deleteEmployee,EmployeeLogin} = require("../Controller/EmployeeController")
 
 const route = require("express").Router()
 
 route.get("/",getEmployee)
+
+route.get("/byid/:id", getEmployeebyId)
 
 route.post("/",postEmployee)
 

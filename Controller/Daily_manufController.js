@@ -10,6 +10,17 @@ exports.getDaily_manuf= async (req,res)=>{
         
     }
 }
+
+// get element Br Id
+exports.getDaily_manufById = async (req,res)=>{
+    try {
+        const data = await Daily_manuf.findById(req.params.id);
+        return res.json({errors:false,data:data})
+    } catch (error) {
+        return res.status(400).json({errors:true,message:error.message})
+    }
+}
+
 // post
 exports.postDaily_manuf= async (req,res)=>{
     try {

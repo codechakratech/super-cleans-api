@@ -11,6 +11,15 @@ exports.getWeight= async (req,res)=>{
         
     }
 }
+//byid
+exports.getWeightbyId = async (req,res)=>{
+    try {
+        const data = await Weight.findById(req.params.id)
+        return res.json({errors:false,data:data})
+    } catch (error) {
+        return res.status(400).json({errors:true,message:error.message})
+    }
+}
 // post
 exports.postWeight= async (req,res)=>{
     try {
