@@ -11,7 +11,7 @@ route.get('/',getDaily_manuf )
 
 route.get('/byid/:id', getDaily_manufById)
 
-route.post('/daily', postDaily_manuf)
+route.post('/', postDaily_manuf)
 
 route.put('/:id', putDaily_manuf)
 
