@@ -1,5 +1,5 @@
-const Income = require("../model/Income");
-const Leger = require('../model/Leger')
+const Income = require("../Model/Income");
+const Leger = require('../Model/Leger')
 exports.getIncomeById = async (req, res) => {
     try {
         const data = await Income.findById(req.params.id);
