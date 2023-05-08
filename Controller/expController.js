@@ -1,4 +1,4 @@
-const Expence = require("../model/Expence");
+const Expence = require("../Model/Expence");
 
 
 // get element By Id
