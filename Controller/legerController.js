@@ -1,4 +1,4 @@
-const leger = require("../model/Leger")
+const leger = require("../Model/Leger")
 
 exports.getLegerById = async (req,res)=>{
     try {
