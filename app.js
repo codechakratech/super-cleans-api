@@ -14,6 +14,7 @@ const userRoute = require('./Routers/userRoute')
 const Productroute = require("./Routers/ProductRoutes")
 const deproute = require("./Routers/DepRoutes")
 const weightRoute = require("./Routers/WeightRoutes")
+const roleRoutes = require("./Routers/RoleRoutes")
 
 // inilization
 const app = express()
@@ -38,6 +39,7 @@ app.use('/api/user', userRoute)
 app.use("/api/product",Productroute)
 app.use("/api/dep",deproute)
 app.use("/api/weight",weightRoute)
+app.use("/api/role",roleRoutes)
 
 // listen
 app.listen(process.env.PORT)

@@ -38,3 +38,7 @@ body - {dept_name}
 url - http://localhost:5000/api/weight
 body - {weight_name}
 
+10. Role - 
+url - http://localhost:5000/api/role
+body - {role_name}
+

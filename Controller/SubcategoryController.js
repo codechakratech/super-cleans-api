@@ -11,7 +11,7 @@ exports.getSubcatbyid = async (req,res)=>{
 
 exports.getSubcategory = async (req,res)=>{
     try {
-        const data = await Subcategory.find()
+        const data = await Subcategory.find().populate('categories')
         return res.json({errors:false,data:data})
     } catch (error) {
         return res.status(400).json({errors:true,message:error.message})
