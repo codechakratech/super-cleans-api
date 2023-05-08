@@ -28,7 +28,7 @@ body - {name,address,email,password,createdby,createdat,aadharno,aadharphoto,pro
 
 7. product - 
 url - http://localhost:5000/api/product
-body -  {productname,createdby,createdat}
+body -  {productname,perKgAmount,createdby,createdat}
 
 8. Department - 
 url - http://localhost:5000/api/dep
