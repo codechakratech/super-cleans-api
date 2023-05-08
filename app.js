@@ -16,6 +16,10 @@ const deproute = require("./Routers/DepRoutes")
 const weightRoute = require("./Routers/WeightRoutes")
 const roleRoutes = require("./Routers/RoleRoutes")
 
+
+const incoRouter = require('./Routers/incoRouter')
+const expRouter = require('./Routers/expRouter')
+const legerRouter = require('./Routers/legerRouter')
 // inilization
 const app = express()
 
@@ -41,6 +45,10 @@ app.use("/api/dep",deproute)
 app.use("/api/weight",weightRoute)
 app.use("/api/role",roleRoutes)
 
+app.use('/api/income', incoRouter)
+app.use('/api/expence', expRouter)
+app.use('/api/leger', legerRouter)
+
 // listen
 app.listen(process.env.PORT)
 
@@ -56,4 +64,4 @@ async function main() {
 }
 main()
 
-
+ 

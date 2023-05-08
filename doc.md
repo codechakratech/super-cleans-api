@@ -42,3 +42,13 @@ body - {weight_name}
 url - http://localhost:5000/api/role
 body - {role_name}
 
+11. Income -
+url - http://localhost:5000/api/income
+body - {name,date,income_type,description,amount}
+
+12. Expence -
+url - http://localhost:5000/api/expence
+body - {name,date,expence_type,description,amount}
+
+13. Leger - http://localhost:5000/api/leger
+url - {total_income,total_amount,total_expence}
