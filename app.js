@@ -44,7 +44,6 @@ app.use("/api/product",Productroute)
 app.use("/api/dep",deproute)
 app.use("/api/weight",weightRoute)
 app.use("/api/role",roleRoutes)
-
 app.use('/api/income', incoRouter)
 app.use('/api/expence', expRouter)
 app.use('/api/leger', legerRouter)
