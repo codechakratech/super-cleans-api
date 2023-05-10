@@ -23,7 +23,7 @@ exports.getCustomer = async (req, res) => {
 // post
 exports.postCustomer = async (req,res)=>{
     try {
-        const newCustomer= new Customer(req.body)
+        const newCustomer = new Customer(req.body)
         const data = await newCustomer.save()
         return res.json({errors:false,data:data})
     } catch (error) {
