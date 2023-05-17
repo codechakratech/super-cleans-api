@@ -13,6 +13,21 @@ const orderSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
+     delivery_date: {
+        type: Date
+    },
+    advance_Payment: {
+        type: Number,
+        required: true
+    },
+    Pending_payment: {
+        type: Number,
+        required: true
+    },
+    payment_status: {
+        type: String,
+        required: true
+    },
     created_by: {
         type: String
         
