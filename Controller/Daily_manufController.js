@@ -3,7 +3,7 @@ const Daily_manuf = require('../Model/Daily_manuf')
 // get
 exports.getDaily_manuf= async (req,res)=>{
     try {
-        const data = await Daily_manuf.find()
+        const data = await Daily_manuf.find().populate([{path:'productname',model:'product'},{path:'packing_type',model:'weight'}])
         return res.json({errors:false,data:data})
     } catch (error) {
         return res.status(400).json({errors:false,message:error.message})

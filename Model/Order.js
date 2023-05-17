@@ -2,12 +2,12 @@ const mongoose = require('mongoose')
 
 const orderSchema = new mongoose.Schema({
     name: {
-        type: String,
-        required: true
+        type: mongoose.Schema.Types.ObjectId, 
+        ref:'customer'
     },
     product_name: {
-        type: String,
-        required: true
+         type: mongoose.Schema.Types.ObjectId, 
+         ref:'product'
     },
     order_in_kg: {
         type: Number,

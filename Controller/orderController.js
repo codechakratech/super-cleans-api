@@ -14,7 +14,7 @@ exports.getOrderbyid = async (req,res)=>{
 // get
 exports.getOrder= async (req,res)=>{
     try {
-        const data = await Order.find()
+        const data = await Order.find().populate([{path:'product_name',model:'product'},{path:'name',model:'customer'}])
         return res.json({errors:false,data:data})
     } catch (error) {
         return res.status(400).json({errors:false,message:error.message})
